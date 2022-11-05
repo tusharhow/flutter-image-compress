@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_image_compress/flutter_image_compress.dart';
 import 'package:image_picker/image_picker.dart';
 
+
 class ImageController extends ChangeNotifier {
   File? originalImage;
   File? compressedImage;
   String compressedPath = '/storage/emulated/0/Download/';
+
 
   Future<void> pickImage() async {
     final pickedImage =
